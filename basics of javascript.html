@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js code</title>
+</head>
+<body>
+    <script>
+     /*   let name = "dinesh";
+
+        let age = 22;
+
+        let Gender = "Male"
+
+        let address = "tamil nadu, india"
+
+    */
+        //object
+        const Person = 
+        {
+            Name: "dinesh",
+            Gender: "male"
+
+        };
+
+        //loop called (for in loop)
+        for(let key in Person)
+        {
+           
+            console.log(key + ":", Person[key]);
+
+        }
+
+        let person = 
+        {
+            age : 22,
+
+            address : "tamil nadu, india",
+
+            //Array
+            favcolors : ["red", "white", "yellow"],
+
+            sibling :
+            {
+                brother : "gokul",
+                sister : "mani",
+            },   
+            
+            //condition
+            blood:function(blood_grp)
+            {
+            //let blood_grp = blood_grp;
+
+            if (blood_grp === "o+") 
+            {  
+                console.log("share your number please");
+
+            }
+            else 
+            {
+
+                console.log("dont forget to donate every three months once");
+
+            }
+            console.log(blood_grp)
+            }   
+        }
+        
+            
+        //Function
+        function second_person(name, age, address, gender)
+
+        {
+            let info = "\n NAME :"+ name +
+            "\n AGE :"+ age +
+            "\n ADDRESS :"+ address +
+            "\n GENDER :" + gender
+
+            console.log(info)
+
+        }
+    
+        console.log(person.age);
+
+        console.log(person.sibling.sister);
+
+        person.blood("b+")
+
+        console.log(person.favcolors[2])
+
+        second_person("ramesh", 32, "chennai,tamil nadu", "male")
+
+        person = JSON.stringify(person);
+        person = JSON.parse(person);
+        console.log(person.age);
+
+    </script>
+    
+</body>
+</html>
